@@ -36,20 +36,20 @@ for (let name of names) {
 }
 console.log("Concatenated names:", concatenatedNames.trim()); // trim to remove the trailing space
 
-// ANCHOR Step 3: access the last element of any array
+// ANCHOR Step 3: access last element of any array
 // you can access the last element using: array[array.length - 1]
 
-// ANCHOR Step 4: access the first element of any array
+// ANCHOR Step 4: access first element of any array
 // you can access the first element using: array[0]
 
-// ANCHOR Step 5: create a new array called nameLengths
+// ANCHOR Step 5: create new array called nameLengths
 const nameLengths = [];
 for (let name of names) {
-    nameLengths.push(name.length); // push the length of each name into nameLengths
+    nameLengths.push(name.length); // push length of each name into nameLengths
 }
 console.log("Name lengths:", nameLengths);
 
-// ANCHOR Step 6: calculate the sum of all elements in the nameLengths array
+// ANCHOR Step 6: calculate sum of all elements in the nameLengths array
 let totalNameLengths = 0;
 for (let length of nameLengths) {
     totalNameLengths += length; // sum all lengths
@@ -82,7 +82,7 @@ function calculateAverage(numbers) {
 }
 console.log("Average of numbers:", calculateAverage([10, 20, 30]));
 
-// ANCHOR Step 11: function to compare averages of two arrays
+// ANCHOR Step 11: function to compare averages of 2 arrays
 function isFirstArrayAverageGreater(arr1, arr2) {
     const avg1 = calculateAverage(arr1);
     const avg2 = calculateAverage(arr2);
@@ -97,7 +97,7 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
 console.log("Will buy drink?", willBuyDrink(true, 15));
 
 // ANCHOR Step 13: custom function to find the maximum number in an array
-// this function takes an array of numbers and returns the maximum value.
+// this takes an array of numbers and returns the max value.
 function findMaxNumber(numbers) {
     return Math.max(...numbers); // use Math.max with spread operator
 }
